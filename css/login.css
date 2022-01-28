@@ -1,0 +1,138 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main .contain {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(#162020)), url("../img/login.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), #162020), url("../img/login.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.main .contain .left {
+  width: 55%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main .contain .left h1 {
+  color: white;
+}
+
+.main .contain .community {
+  position: absolute;
+  bottom: 15px;
+  color: #fff;
+}
+
+.main .contain .login {
+  width: 50%;
+  height: 100vh;
+  background-color: #494949;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .contain .login .login-contain {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .contain .login .login-contain .icon-box {
+  padding: 25px 0 5px 0;
+}
+
+.main .contain .login .login-contain .icon-box i {
+  font-size: 35px;
+}
+
+.main .contain .login .login-contain .input-box {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .contain .login .login-contain .input-box input {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.main .contain .login .login-contain .input-box button {
+  width: 50%;
+}
+
+.main .contain .login .login-contain .input-box a {
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.community.show-or-none {
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .main .contain .left {
+    display: none;
+  }
+  .main .contain .login {
+    width: 100%;
+    background-color: unset;
+  }
+  .community.show-or-none {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .main .contain .login .login-contain .input-box {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=login.css.map */

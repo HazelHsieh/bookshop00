@@ -1,0 +1,96 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.main .contain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgb(22, 32, 32)),url('../img/login.png');
+    background-position: center;
+    background-size: cover;
+    .left{
+        width: 55%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        h1{
+            color: white;
+        
+        }
+    }
+    .community{
+        position: absolute;
+        bottom: 15px;
+        color: #fff;
+    }
+    .login{
+        width: 50%;
+        height: 100vh;
+        background-color:#494949;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .login-contain{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .icon-box{
+                padding: 25px 0 5px 0; 
+                i{
+                    font-size: 35px;
+                }
+            }
+            .input-box{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input{
+                    margin: 10px 0px;
+                    width: 100%;
+                }
+                button{
+                    width: 50%;
+                }
+                a{
+                    margin-bottom: 20px;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+.community.show-or-none{
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    color: #fff;
+}
+@media (max-width:992px) {
+    .main .contain .left{
+        display: none;
+    } 
+    .main .contain .login{
+        width: 100%;
+        background-color: unset;
+    }
+    
+    
+    .community.show-or-none{
+        display: block;
+    }
+}
+@media (max-width:576px) {
+    .main .contain .login .login-contain .input-box{
+        width: 70%;
+    }
+}
